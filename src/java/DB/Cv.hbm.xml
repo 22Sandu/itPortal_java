@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 18, 2016 2:42:43 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="DB.Cv" table="cv" catalog="portal" optimistic-lock="version">
+        <id name="idcv" type="java.lang.Integer">
+            <column name="idcv" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

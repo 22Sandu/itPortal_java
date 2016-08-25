@@ -1,0 +1,19 @@
+
+
+root { 
+    display: block;
+}
+
+.pagetable {
+    width: 100%; 
+    alignment-adjust: central;
+    
+}
+
+/*table, th, td {
+   border: 1px solid black;
+}*/
+
+.alignc {
+    text-align: center;
+}

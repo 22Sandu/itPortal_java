@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/portal?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">1234</property>
+    <mapping resource="DB/Company.hbm.xml"/>
+    <mapping resource="DB/StudentPreference.hbm.xml"/>
+    <mapping resource="DB/Type.hbm.xml"/>
+    <mapping resource="DB/Cv.hbm.xml"/>
+    <mapping resource="DB/Staff.hbm.xml"/>
+    <mapping resource="DB/Advisee.hbm.xml"/>
+    <mapping resource="DB/Login.hbm.xml"/>
+    <mapping resource="DB/Status.hbm.xml"/>
+    <mapping resource="DB/Stream.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

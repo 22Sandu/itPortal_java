@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 18, 2016 2:42:43 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="DB.Company" table="company" catalog="portal" optimistic-lock="version">
+        <id name="companyid" type="java.lang.Integer">
+            <column name="companyid" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" />
+        </property>
+        <set name="studentPreferencesForPref2" table="student_preference" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="pref2" not-null="true" />
+            </key>
+            <one-to-many class="DB.StudentPreference" />
+        </set>
+        <set name="studentPreferencesForPref1" table="student_preference" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="pref1" not-null="true" />
+            </key>
+            <one-to-many class="DB.StudentPreference" />
+        </set>
+        <set name="studentPreferencesForPref4" table="student_preference" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="pref4" not-null="true" />
+            </key>
+            <one-to-many class="DB.StudentPreference" />
+        </set>
+        <set name="studentPreferencesForPref3" table="student_preference" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="pref3" not-null="true" />
+            </key>
+            <one-to-many class="DB.StudentPreference" />
+        </set>
+    </class>
+</hibernate-mapping>

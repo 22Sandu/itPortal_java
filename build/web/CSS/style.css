@@ -1,0 +1,51 @@
+@import url('demo.css');
+
+.grid {
+	margin: 30px auto ;
+}
+
+.grid figure {
+	display: inline;
+	float: left;
+	margin: 0 10px 10px 10px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.grid figure img {
+	display: block;
+}
+
+.grid figure figcaption {
+	position: relative;
+	font-size: 16px;
+	font-weight: 400;
+	left: auto;
+	float: left;
+	width: 125px;
+	height: 60px;
+	bottom: -60px;
+	padding: 20px;
+	color: #ddd;
+	background: #696969;
+	-webkit-font-smoothing: antialiased;
+	-webkit-transition: bottom 0.2s ease;
+	-moz-transition: bottom 0.2s ease-in-out;
+	-ms-transition: bottom 0.2s ease-in-out;
+	-o-transition: bottom 0.2s ease-in-out;
+	transition: bottom 0.2s ease-in-out;
+}
+
+.grid figure figcaption a {
+	color: #fff;
+}
+
+.grid figure figcaption a:hover {
+	color: #ffd468;
+}
+
+.grid figure:hover figcaption {
+	bottom: 0px;
+}
+
+
